@@ -1,7 +1,12 @@
 import random
 
+
+#Greetings Shown When program first run
 greetings = ['hola', 'hello', 'hi', 'Hi', 'hey!','hey']
 
+
+
+#List Of Questions , Add more by adding q-n and a-n
 q1 = 'how are'
 a1 = [' I am Okay, how are you ?',"how are you ?"]
 
@@ -15,6 +20,7 @@ q3 = 'yes'
 a3 = ['are you sure u spell it Y.e.s ?',"yes what ?","hmm .. say else ?"]
 
 
+#Responses to print when the question is not in library
 error = ['ok.', 'hmmm i see', 'well , tell me about something new']
 
 while True:
@@ -33,7 +39,6 @@ while True:
         elif q3 in a:
                 random_response = random.choice(a3)
                 print(random_response)
-            
         else:
                 random_reply = random.choice(error)
                 print(random_reply)
